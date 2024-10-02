@@ -1,31 +1,17 @@
-// import scanner using java utility package
-import java.util.Scanner;
+// import JOption tool 
+import javax.swing.JOptionPane;
 
-public class Main {
-
-	public static void main(String[] args) {
+public class Main{
+	public static void main(String[] args){
 		
-		Scanner scanner = new Scanner(System.in);
-	
-		System.out.println("whats your name");
-		String name = scanner.nextLine();
-		System.out.println("type your age");
-		int age = scanner.nextInt();
+		String name = JOptionPane.showInputDialog("what's your name");
+		JOptionPane.showMessageDialog(null, name);
 		
-		/* 
-		 * to prevent the issue of escaping the new line we got to make it empty before 
-		 * prompting again
-		 */
+		int age = Integer.parseInt(JOptionPane.showInputDialog("type your age"));
+		JOptionPane.showMessageDialog(null, age);
 		
-		scanner.nextLine();
-
-		System.out.println("whats your fav food");
-		String food = scanner.nextLine();
-		
-		System.out.println("Good Morning "+name);
-		System.out.println("you have "+age+" years old");
-		System.out.println("your fav food is "+food);
+		double height = Double.parseDouble(JOptionPane.showInputDialog("how long is your height"));
+		JOptionPane.showMessageDialog(null, height+" cm");
 		
 	}
-	
 }
