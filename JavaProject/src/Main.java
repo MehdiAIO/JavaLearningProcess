@@ -1,20 +1,23 @@
+import java.util.Scanner;
 public class Main{
 	public static void main(String[] args){
 		
-		double x = 3.15;
-		double y = 1.20;
-		double w = -10.0;
+//	Mathematical formula : a² + b² = c²
 		
-//		double result = Math.max(x, y); it gave 3.15
-//		double result = Math.min(x, y); it gave 1.20
-//		double result = Math.abs(w); it gave us 10
-//		double result = Math.sqrt(16); it gave us 4
-//		double result = Math.round(x); it gave us 3 -it always round to the closest value
-//		double result = Math.ceil(x); it gave us 4 -it always round up
-//		double result = Math.floor(x); it gave us 3 -it always round down
-		
-		System.out.println(result);
-		
+	double a;
+	double b;
+	double c;	
+	
+	Scanner scanner = new Scanner(System.in);
+	
+	System.out.println("enter \"a\" value");
+	a = scanner.nextDouble();
+	System.out.println("enter \"b\" value");
+	b = scanner.nextDouble();
+	
+	c = Math.sqrt((a*a)+(b*b));
+	
+	System.out.println("the hypotenuse of triangle is : "+c);
 		
 	}
 }
