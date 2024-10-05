@@ -1,17 +1,20 @@
-// import JOption tool 
-import javax.swing.JOptionPane;
-
 public class Main{
 	public static void main(String[] args){
 		
-		String name = JOptionPane.showInputDialog("what's your name");
-		JOptionPane.showMessageDialog(null, name);
+		double x = 3.15;
+		double y = 1.20;
+		double w = -10.0;
 		
-		int age = Integer.parseInt(JOptionPane.showInputDialog("type your age"));
-		JOptionPane.showMessageDialog(null, age);
+//		double result = Math.max(x, y); it gave 3.15
+//		double result = Math.min(x, y); it gave 1.20
+//		double result = Math.abs(w); it gave us 10
+//		double result = Math.sqrt(16); it gave us 4
+//		double result = Math.round(x); it gave us 3 -it always round to the closest value
+//		double result = Math.ceil(x); it gave us 4 -it always round up
+//		double result = Math.floor(x); it gave us 3 -it always round down
 		
-		double height = Double.parseDouble(JOptionPane.showInputDialog("how long is your height"));
-		JOptionPane.showMessageDialog(null, height+" cm");
+		System.out.println(result);
+		
 		
 	}
 }
