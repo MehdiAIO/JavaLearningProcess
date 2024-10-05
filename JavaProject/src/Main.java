@@ -1,23 +1,16 @@
-import java.util.Scanner;
+import java.util.Random;
 public class Main{
 	public static void main(String[] args){
 		
-//	Mathematical formula : a² + b² = c²
+		Random random = new Random();
 		
-	double a;
-	double b;
-	double c;	
-	
-	Scanner scanner = new Scanner(System.in);
-	
-	System.out.println("enter \"a\" value");
-	a = scanner.nextDouble();
-	System.out.println("enter \"b\" value");
-	b = scanner.nextDouble();
-	
-	c = Math.sqrt((a*a)+(b*b));
-	
-	System.out.println("the hypotenuse of triangle is : "+c);
+//		int x = random.nextInt(); // generate a number between -x & +x
+//		int x = random.nextInt(6); // generate a number >= 0 & <6
+//		int x = random.nextInt(6)+1; // generate a number >= 0 & <=6
+//		double x = random.nextDouble(); // generate a number > 0 & <1
+		boolean x = random.nextBoolean(); // true or false 
+		
+		System.out.println(x);
 		
 	}
 }
