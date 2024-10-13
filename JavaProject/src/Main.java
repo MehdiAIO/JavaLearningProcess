@@ -5,15 +5,14 @@ public class Main{
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("Press q or Q to quit the game");
-		String response = scanner.next();
+		String name = "";
 		
-		if(!response.equals("q") && !response.equals("Q")) {
-			System.out.println("Still in the game");
+		while(name.isBlank()) {
+			System.out.println("type your name");
+			name = scanner.nextLine();
 		}
-		else {
-			System.out.println("You quit the game");
-		}
+		
+		scanner.close();
 		
 	}
 }
