@@ -1,23 +1,19 @@
-import java.util.ArrayList;
-
 public class Main{
 	public static void main(String[] args){
-
-		// for-each = 	traversing technique to iterate through the elements in an array/collection
-
-		//				less steps, more readable
-
-		//				less flexible
+//		hello();
+		int x = 1;
+		int y = 1;
 		
-//		String[] cars = {"Mazeratti","Tesla","Ford"};
-		ArrayList<String> cars = new ArrayList<String>();
-		cars.add("Lambo");
-		cars.add("Porshe");
-		cars.add("Audi");
-
-		for(String i : cars) {
-			System.out.println(i);
-		}
+		int z = addition(x,y);
 		
+		System.out.println(z);
+	}
+	
+//	public static void hello() {
+//		System.out.println("Hello");
+//	}
+	
+	public static int addition(int x,int y) {
+		return x + y;
 	}
 }
